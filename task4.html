@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> JavaScript </title>
+		<script type="text/javascript">
+			/*
+				Task 4
+			*/ 
+
+			document.write("--------- Task 4 ---------" + "<br/><br/>");
+
+			var pi = 3.14;
+			var r = prompt("Input r of cylinder", "0");
+			var h = prompt("Input h of cylinder", "0");
+
+			r = parseInt(r);
+        	h = parseInt(h);
+
+			function volume() {
+				var V = parseFloat(pi*r*h*h).toFixed(2);
+				document.write("Volume of cylinder (V): " + V + "<br/>");
+			}
+
+			function area() {
+				var S = parseFloat(2*pi*r*(h+r)).toFixed(2);
+				document.write("Area of cylinder (S): " + S + "<br/>");
+			}
+
+			volume();
+			area();
+			
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

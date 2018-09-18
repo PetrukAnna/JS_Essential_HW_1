@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title> JavaScript </title>
+
+		<script type="text/javascript">
+
+			/*
+				Task 2
+			*/ 
+
+			var x = 6;
+			var y = 15;
+			var z = 4;
+			document.write("--------- Task 2 ---------" + "<br/><br/>");
+			document.write("Variables before changes: " + "<br/>");
+			document.write("x = " + x + "<br/>");
+			document.write("y = " + y + "<br/>");
+			document.write("z = " + z + "<br/><br/>");
+
+			document.write("x after expression (x += y - x++ * z): " + "<br/>");
+			x += y - x++ * z; // x = 6+15-6*4 = 21-24 = -3
+			document.write("x = " + x + "<br/><br/>");
+
+			document.write("z after expression (z = --x - y * 5): " + "<br/>");
+			z = --x - y * 5;  // z = -4-15*5 = -4-75 = -79
+			document.write("z = " + z + "<br/><br/>");
+
+			document.write("z after expression (y /= x + 5 % z): " + "<br/>");
+			y /= x + 5 % z;  // y = 15/-4+5%-79 = 15/-4+5 = 15/1 = 15
+			document.write("y = " + y + "<br/><br/>");
+
+			document.write("z after expression (z = x++ + y * 5): " + "<br/>");
+			z = x++ + y * 5;  // z = -4 + 15 * 5 = -4 + 75 = 71
+			document.write("z = " + z + "<br/><br/>");
+
+			document.write("z after expression (x = y - x++ * z): " + "<br/>");
+			x = y - x++ * z;  // x = 15 + 3 * 71 = 15 + 213 = 228
+			document.write("x = " + x + "<br/><br/>");
+
+			/*
+				Task 3
+			*/ 
+
+			document.write("--------- Task 3 ---------" + "<br/><br/>");
+			document.write("Variables: " + "<br/>");
+			document.write("x = " + x + "<br/>");
+			document.write("y = " + y + "<br/>");
+			document.write("z = " + z + "<br/><br/>");
+
+			var rez = (x + y + z)/3;
+			document.write("Average: " + rez + "<br/><br/>");
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
